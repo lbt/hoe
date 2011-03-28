@@ -1,5 +1,11 @@
+hoe (2.9.1-2) unstable; urgency=low
+
+  * Update the dependencies and gbp
+
+ -- David Greaves <david@dgreaves.com>  Mon, 28 Mar 2011 16:54:23 +0100
+
 hoe (2.9.1-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #nnnn)
+  * Initial release based on gem2deb
 
  -- David Greaves <david@ash.dgreaves.com>  Mon, 28 Mar 2011 16:50:29 +0100
