@@ -1,26 +1,29 @@
-Source: hoe
+Source: ruby-hoe
 Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders:  <>
 DM-Upload-Allowed: yes
-Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.1.0), rake (>= 0.8.7), ruby-minitest (>= 2.0.2)
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.1), rake (>= 0.8.7), ruby-minitest (>= 2.0.2)
 Standards-Version: 3.9.1
-#Vcs-Git: git://git.debian.org/collab-maint/libnet-jabber-loudmouth-perl.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/libnet-jabber-loudmouth-perl.git;a=summary
+#Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-hoe.git
+#Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/ruby-hoe;a=summary
 Homepage: http://rubyforge.org/projects/seattlerb/
+XS-Ruby-Versions: all
 
 Package: ruby-hoe
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
-# rake (>= 0.8.7), minitest (>= 2.0.2)
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby1.8 | ruby-interpreter
+# rake (>= 0.8.7, runtime), minitest (>= 2.0.2, development)
 Description: Hoe is a rake/rubygems helper for project Rakefiles
  Hoe is a rake/rubygems helper for project Rakefiles. It helps you
  manage and maintain, and release your project and includes a dynamic
  plug-in system allowing for easy extensibility. Hoe ships with
  plug-ins for all your usual project tasks including rdoc generation,
  testing, packaging, and deployment.
- .\n See class rdoc for help. Hint: `ri Hoe` or any of the plugins listed
+ .
+ See class rdoc for help. Hint: `ri Hoe` or any of the plugins listed
  below.
- .\n For extra goodness, see: http://seattlerb.rubyforge.org/hoe/Hoe.pdf
-
+ .
+ For extra goodness, see: http://seattlerb.rubyforge.org/hoe/Hoe.pdf
